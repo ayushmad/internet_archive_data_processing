@@ -1,0 +1,6 @@
+*.pyc
+input_files/
+output_files/
+interm_files/
+temp/
+test/
