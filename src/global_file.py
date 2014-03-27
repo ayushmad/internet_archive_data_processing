@@ -4,6 +4,9 @@ DATA_DIR_109 = "../input_files/109/*"
 DATA_DIR_110 = "../input_files/110/*"
 DATA_DIR_111 = "../input_files/111/*"
 DATA_DIR_112 = "../input_files/112/*"
+EDU_NODE_LIST = "../input_files/edu_data_collection.tsv"
+EDU_NODE_OUT = "../output_files/edu_data_collection.nodes"
+COLLEGE_FILES = "../lib/us_college_list.edu"
 
 
 # Creating Temp Dir
@@ -24,6 +27,7 @@ DOMAIN_MAPPER_DIR = "domain_mapper";
 GEOIP_MAPPER_DIR = "geoip_mapper";
 OUT_TEMPLETE = "node_file_[YEAR]";
 OUT_YEAR_TEMPELETE = "[YEAR]"
+
 
 def get_input_dir():
     return INPUT_FILES_DIR;
