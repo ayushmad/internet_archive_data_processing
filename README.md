@@ -9,8 +9,8 @@ available core to the user.
 
 Dependency
 ==========
-[DNS Python][]
-[DNS Pyhton]: http://www.dnspython.org/
+[DNS Python][dp]
+[dp]: http://www.dnspython.org/
 
 Static Sources
 --------------
