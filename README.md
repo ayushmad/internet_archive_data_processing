@@ -49,37 +49,45 @@ for the jobs to be completed.
 
 basic\_extraction
 -----------------
+
 BasicExtractionManger
+
 Generates multiple instances of BasicExtraction using process manager.
+
 BasicExtraction
+
 Each instance takes a file as input and extracts hostname from the url.
 and creates a separate output just for the nodes.
 
 merge\_files
 ------------
+
 MergeFilesManager
+
 Calls multiple instances of MergeFiles. Till all the nodes are merged together.
+
 MergeFiles
 Takes any two files as input and runs the merge operation.
-
-
-
-
 
 Design
 ======
 
 Code as a pipeline in which each step completes before next
 step starts.
+
 Major steps :-
+
 a) Basic Extraction -  The Basic extraction step aggregates
 the data from different war files. It parses url and rejects
 dirty url links. It then aggregates the edges. Also it divides
 the data into node files and edge file.
+
 b) Merge File :- This step we merge all the data using merge sort.
 This also allows us to aggregate edge count across files.
+
 c) Domain Mapper :-  For each url we extract the domain of the file
 and try to classify into the top level domains.
+
 d) TLD Mapping :- We try to generate the country associated with 
 		 url. This is done first using [tld][cctld] then using
 		 ip region lookup.
