@@ -67,6 +67,7 @@ MergeFilesManager
 Calls multiple instances of MergeFiles. Till all the nodes are merged together.
 
 MergeFiles
+
 Takes any two files as input and runs the merge operation.
 
 Design
